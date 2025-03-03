@@ -3,6 +3,7 @@ import random
 n = random.randint(1,100)
 count = 0
 yrnum = -1
+print("welcome...")
 
 while(yrnum != n):
     
