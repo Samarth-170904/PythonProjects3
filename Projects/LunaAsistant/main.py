@@ -1,10 +1,8 @@
 import speech_recognition as sr
 import webbrowser
 import pyttsx3 as pyttsx
-import musiclib
+#import musiclib
 #import requests as request # type: ignore
-
-
 
 
 
@@ -28,11 +26,11 @@ def processcommand(c):
     elif "open linkedin" in c:  # Fixed typo
         webbrowser.open("https://www.linkedin.com/")
         speak("Opening LinkedIn")
-    elif c.lower().startswith("play"):
-        song = c.lower().split(" ")[1]
-        link = musiclib.music[song]
-        webbrowser.open(link)
-        speak(f"Playing {song}")
+    # elif c.lower().startswith("play"):
+    #     song = c.lower().split(" ")[1]
+    #     link = musiclib.music[song]
+    #     webbrowser.open(link)
+    #     speak(f"Playing {song}")
         
     # we can add open ai also but it is paid so i have not integrated 
         
